@@ -1,16 +1,21 @@
 #ifndef __WINDVANECONTROLLER_H__
 #define __WINDVANECONTROLLER_H__
 
-#include "CV7/Windsensor.h"
+#include "waypointrouting/WaypointRouting.h"
 
-class WindVaneController
-{
+class WindVaneController {
+
 public:
 
 	WindVaneController();
 	~WindVaneController() {};
+
+	void setVaneAngle(double trueWindDirection, double courseToSteer);
+	double getVaneAngle();
 	
 private:
+
+	double m_vaneAngle;
 
 };
 
