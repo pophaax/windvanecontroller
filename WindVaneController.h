@@ -11,6 +11,7 @@ public:
 	~WindVaneController() {};
 
 	void setVaneAngle(double trueWindDirection, double courseToSteer);
+        void adjustAngle(double heading, double courseToSteer);
 	double getVaneAngle();
 	
 private:
